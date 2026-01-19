@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="pt-BR" data-lang="pt">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+
+  <title>AppSec on Fire | Secure Under Pressure</title>
+  <meta name="description" content="AppSec on Fire: competição estilo reality para formar talentos júnior em AppSec. 12 participantes, 2 provas por episódio, 1 eliminado. Sem slide. Sem desculpa." />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <meta name="theme-color" content="#0b0b10" />
+  <link rel="canonical" href="https://example.com/appsec-on-fire" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="AppSec on Fire" />
+  <meta property="og:title" content="AppSec on Fire" />
+  <meta property="og:description" content="12 participantes. 2 provas. 1 eliminado. AppSec real sob pressão." />
+  <meta property="og:url" content="https://example.com/appsec-on-fire" />
+  <meta property="og:image" content="https://example.com/og-appsec-on-fire.png" />
+  <meta property="og:image:alt" content="AppSec on Fire — Secure Under Pressure" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:locale:alternate" content="en_US" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AppSec on Fire" />
+  <meta name="twitter:description" content="Secure Under Pressure. Reality de AppSec com provas práticas e eliminação semanal." />
+  <meta name="twitter:image" content="https://example.com/og-appsec-on-fire.png" />
+
+  <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
+  <!-- JSON-LD (opcional) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "AppSec on Fire",
+    "url": "https://example.com/appsec-on-fire",
+    "description": "Reality-style AppSec competition to grow junior talent. 12 contestants, 2 challenges per episode, weekly elimination.",
+    "inLanguage": ["pt-BR","en"]
+  }
+  </script>
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="wrap">
+      <div class="inner">
+        <div class="brand">
+          <span class="mark" aria-hidden="true"></span>
+          <span>AppSec on Fire</span>
+        </div>
+
+        <nav aria-label="Primary">
+          <a href="#format">Formato</a>
+          <a href="#season">Temporada</a>
+          <a href="#scoring">Pontuação</a>
+          <a href="#apply">Inscrições</a>
+          <a href="#cta">CTAs</a>
+        </nav>
+
+        <div class="pill" role="group" aria-label="Language toggle">
+          <span id="langLabel" style="font-weight:950;font-size:12px;letter-spacing:.8px;text-transform:uppercase;color:rgba(255,255,255,.85)">PT</span>
+          <button class="switch" id="switch" type="button" aria-label="Toggle language" data-lang="pt">
+            <span class="knob" aria-hidden="true"></span>
+          </button>
+          <span style="font-weight:950;font-size:12px;letter-spacing:.8px;text-transform:uppercase;color:rgba(255,255,255,.65)">EN</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO: big phrases, no cards -->
+  <section class="full" id="top">
+    <div class="wrap">
+      <div data-i18n="pt">
+        <h1 class="mega">
+          12 participantes.<br/>
+          2 provas.<br/>
+          <span class="accent">1 eliminado.</span>
+        </h1>
+        <p class="sub">
+          Um reality técnico para formar júnior em AppSec na marra.
+          Código real. Decisão real. Feedback público.
+        </p>
+      </div>
+
+      <div data-i18n="en">
+        <h1 class="mega">
+          12 contestants.<br/>
+          2 challenges.<br/>
+          <span class="accent">1 eliminated.</span>
+        </h1>
+        <p class="sub">
+          A technical reality show to grow junior AppSec talent fast.
+          Real code. Real decisions. Public feedback.
+        </p>
+      </div>
+
+      <div class="btnrow" style="margin-top:22px;">
+        <a class="btn primary" href="#apply">
+          <span data-i18n="pt">Inscreva-se</span>
+          <span data-i18n="en">Apply</span>
+        </a>
+        <a class="btn ghost" href="#season">
+          <span data-i18n="pt">Ver temporada 1</span>
+          <span data-i18n="en">See season 1</span>
+        </a>
+        <a class="btn ghost" href="#cta">
+          <span data-i18n="pt">Levar para empresa/evento</span>
+          <span data-i18n="en">Bring to company/event</span>
+        </a>
+      </div>
+
+      <p class="micro" style="margin-top:12px;">
+        <span data-i18n="pt">Sem slide. Sem desculpa. Só engenharia sob pressão.</span>
+        <span data-i18n="en">No slides. No excuses. Just engineering under pressure.</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- FORMAT: wide, clear, not cardy -->
+  <section id="format">
+    <div class="wrap">
+      <div data-i18n="pt">
+        <h2 class="mega" style="font-size:clamp(34px,4.6vw,78px);">
+          Segurança não é opinião.<br/>É <span class="accent">decisão</span>.
+        </h2>
+        <p class="sub">Toda semana: uma prova técnica (0–60) + uma prova estratégica (0–40). Total: 100 pontos.</p>
+      </div>
+
+      <div data-i18n="en">
+        <h2 class="mega" style="font-size:clamp(34px,4.6vw,78px);">
+          Security isn’t opinion.<br/>It’s <span class="accent">decisions</span>.
+        </h2>
+        <p class="sub">Weekly: one technical challenge (0–60) + one strategy challenge (0–40). Total: 100 points.</p>
+      </div>
+
+      <div class="row">
+        <div class="panel">
+          <h3><span data-i18n="pt">Prova 1 – Técnica (0–60)</span><span data-i18n="en">Challenge 1 – Technical (0–60)</span></h3>
+          <p><span data-i18n="pt">Código, pipeline, arquitetura e vulnerabilidades reais. Entrega prática: patch, análise ou diagrama objetivo.</span><span data-i18n="en">Code, pipeline, architecture, real vulnerabilities. Practical output: patch, analysis, or a tight diagram.</span></p>
+          <ul class="bullets">
+            <li><span data-i18n="pt">Detecção correta (0–25)</span><span data-i18n="en">Correct detection (0–25)</span><small><span data-i18n="pt">Achou o problema real.</span><span data-i18n="en">Found the real issue.</span></small></li>
+            <li><span data-i18n="pt">Qualidade da solução (0–15)</span><span data-i18n="en">Fix quality (0–15)</span><small><span data-i18n="pt">Corrigiu sem criar outro incêndio.</span><span data-i18n="en">Fixed without creating a new fire.</span></small></li>
+            <li><span data-i18n="pt">Impacto em produção (0–10)</span><span data-i18n="en">Production impact (0–10)</span><small><span data-i18n="pt">Performance, DX, reversibilidade.</span><span data-i18n="en">Perf, DX, reversibility.</span></small></li>
+            <li><span data-i18n="pt">Tempo e eficiência (0–10)</span><span data-i18n="en">Time & efficiency (0–10)</span><small><span data-i18n="pt">Foco vence ansiedade.</span><span data-i18n="en">Focus beats panic.</span></small></li>
+          </ul>
+        </div>
+
+        <div class="panel">
+          <h3><span data-i18n="pt">Prova 2 – Estratégica (0–40)</span><span data-i18n="en">Challenge 2 – Strategy (0–40)</span></h3>
+          <p><span data-i18n="pt">Priorização, comunicação e decisão sob pressão. Aqui o “depende” morre.</span><span data-i18n="en">Prioritization, communication, decisions under pressure. “It depends” dies here.</span></p>
+          <ul class="bullets">
+            <li><span data-i18n="pt">Priorização de risco (0–15)</span><span data-i18n="en">Risk prioritization (0–15)</span><small><span data-i18n="pt">Impacto + explorabilidade.</span><span data-i18n="en">Impact + exploitability.</span></small></li>
+            <li><span data-i18n="pt">Tomada de decisão (0–10)</span><span data-i18n="en">Decision-making (0–10)</span><small><span data-i18n="pt">Escolheu e bancou.</span><span data-i18n="en">Picked a call and owned it.</span></small></li>
+            <li><span data-i18n="pt">Comunicação clara (0–10)</span><span data-i18n="en">Clear communication (0–10)</span><small><span data-i18n="pt">Sem sigla jogada.</span><span data-i18n="en">No acronym soup.</span></small></li>
+            <li><span data-i18n="pt">Consistência (0–5)</span><span data-i18n="en">Consistency (0–5)</span><small><span data-i18n="pt">Sem contradição entre provas.</span><span data-i18n="en">No contradictions across challenges.</span></small></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATEMENTS: same vibe as YAS (rotating + shuffle) -->
+  <section id="statements">
+    <div class="wrap">
+      <div data-i18n="pt">
+        <h2 class="mega" style="font-size:clamp(34px,4.6vw,78px);">
+          Frases que doem.<br/>Porque <span class="accent">é verdade</span>.
+        </h2>
+        <p class="sub">Use isso como teaser, pôster, abertura do episódio. Sim, vai cutucar ego.</p>
+      </div>
+
+      <div data-i18n="en">
+        <h2 class="mega" style="font-size:clamp(34px,4.6vw,78px);">
+          Statements that hurt.<br/>Because <span class="accent">they’re true</span>.
+        </h2>
+        <p class="sub">Use these as teasers, posters, episode openers. Yes, it pokes egos.</p>
+      </div>
+
+      <div class="statements" style="margin-top:26px;">
+        <div class="quote">
+          <p class="q" id="quoteText">...</p>
+          <p class="hint" id="quoteHint">...</p>
+          <div class="btnrow">
+            <button class="btn primary" id="shuffleBtn" type="button">
+              <span data-i18n="pt">Shuffle</span>
+              <span data-i18n="en">Shuffle</span>
+            </button>
+            <a class="btn ghost" href="#apply">
+              <span data-i18n="pt">Entrar no programa</span>
+              <span data-i18n="en">Join the program</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEASON: minimal, readable, YAS vibe (no grid of cards) -->
+  <section id="season">
+    <div class="wrap">
+      <div data-i18n="pt">
+        <h2 class="mega" style="font-size:clamp(34px,4.6vw,78px);">
+          Temporada 1.<br/>
+          Do básico ao <span class="accent">incidente</span>.
+        </h2>
+        <p class="sub">Escalada limpa. Cada episódio treina uma peça real do quebra-cabeça.</p>
+      </div>
+
+      <div data-i18n="en">
+        <h2 class="mega" style="font-size:clamp(34px,4.6vw,78px);">
+          Season 1.<br/>
+          From fundamentals to the <span class="accent">incident</span>.
+        </h2>
+        <p class="sub">Clean escalation. Each episode trains a real piece of the puzzle.</p>
+      </div>
+
+      <div class="row">
+        <div class="panel">
+          <h3><span data-i18n="pt">Episódios</span><span data-i18n="en">Episodes</span></h3>
+
+          <ul class="bullets" data-i18n="pt">
+            <li>EP1: Welcome to Production<small>Code review no escuro + priorização</small></li>
+            <li>EP2: SAST Is Lying<small>ruído vs sinal + defesa do scan</small></li>
+            <li>EP3: Dependency Hell<small>SCA crítico + aceite de risco</small></li>
+            <li>EP4: Threat Modeling Under Pressure<small>STRIDE relâmpago + top 3 ameaças</small></li>
+            <li>EP5: CI/CD on Fire<small>pipeline + block or ship</small></li>
+            <li>EP6: Infrastructure Is Code Too<small>IaC vulnerável + risco cloud</small></li>
+            <li>EP7: Secrets Everywhere<small>segredos + incidente</small></li>
+            <li>EP8: Auth Is Hard<small>autorização + least privilege</small></li>
+            <li>EP9: AppSec vs Dev Reality<small>PR malicioso + conflito</small></li>
+            <li>EP10: The Incident<small>resposta + postmortem</small></li>
+            <li>FINAL: Secure the Company<small>estratégia completa + defesa para o board</small></li>
+          </ul>
+
+          <ul class="bullets" data-i18n="en">
+            <li>EP1: Welcome to Production<small>Blind code review + prioritization</small></li>
+            <li>EP2: SAST Is Lying<small>signal vs noise + defend scanning</small></li>
+            <li>EP3: Dependency Hell<small>critical SCA + risk acceptance</small></li>
+            <li>EP4: Threat Modeling Under Pressure<small>Lightning STRIDE + top 3 threats</small></li>
+            <li>EP5: CI/CD on Fire<small>pipeline + block or ship</small></li>
+            <li>EP6: Infrastructure Is Code Too<small>vulnerable IaC + cloud risk</small></li>
+            <li>EP7: Secrets Everywhere<small>secrets + incident</small></li>
+            <li>EP8: Auth Is Hard<small>authorization + least privilege</small></li>
+            <li>EP9: AppSec vs Dev Reality<small>malicious PR + conflict</small></li>
+            <li>EP10: The Incident<small>response + postmortem</small></li>
+            <li>FINAL: Secure the Company<small>full strategy + board defense</small></li>
+          </ul>
+        </div>
+
+        <div class="panel" id="scoring">
+          <h3><span data-i18n="pt">Penalidades e bônus</span><span data-i18n="en">Penalties & bonuses</span></h3>
+          <p>
+            <span data-i18n="pt">Regra simples: transparência total. O público consegue refazer a conta.</span>
+            <span data-i18n="en">Simple rule: full transparency. The audience can redo the math.</span>
+          </p>
+          <ul class="bullets" style="margin-top:16px;">
+            <li><span data-i18n="pt">−10 ignorar vulnerabilidade crítica evidente</span><span data-i18n="en">−10 ignore an obvious critical vuln</span><small><span data-i18n="pt">Não viu? Não passa.</span><span data-i18n="en">Didn’t see it? You don’t pass.</span></small></li>
+            <li><span data-i18n="pt">−10 solução que cria nova falha grave</span><span data-i18n="en">−10 fix introduces severe bug</span><small><span data-i18n="pt">Patch ruim é incêndio novo.</span><span data-i18n="en">Bad patch is a new fire.</span></small></li>
+            <li><span data-i18n="pt">−5 copiar solução sem entender</span><span data-i18n="en">−5 copy without understanding</span><small><span data-i18n="pt">Isso aqui treina cérebro, não Ctrl+C.</span><span data-i18n="en">This trains brains, not Ctrl+C.</span></small></li>
+            <li><span data-i18n="pt">−5 não entregar no tempo</span><span data-i18n="en">−5 no delivery on time</span><small><span data-i18n="pt">Produção não espera.</span><span data-i18n="en">Production won’t wait.</span></small></li>
+            <li><span data-i18n="pt">+5 bônus raro por insight real</span><span data-i18n="en">+5 rare bonus for real insight</span><small><span data-i18n="pt">Elegância, simplificação, prevenção futura.</span><span data-i18n="en">Elegance, simplification, future prevention.</span></small></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPLY: in the same YAS vibe, simple -->
+  <section id="apply">
+    <div class="wrap">
+      <div data-i18n="pt">
+        <h2 class="mega" style="font-size:clamp(34px,4.6vw,78px);">
+          <span class="accent">Inscreva-se</span>.<br/>
+          E aguente a pressão.
+        </h2>
+        <p class="sub">Janela de inscrição: <b>01 Mar 2026</b> → <b>31 Mar 2026</b>. Vagas limitadas.</p>
+      </div>
+
+      <div data-i18n="en">
+        <h2 class="mega" style="font-size:clamp(34px,4.6vw,78px);">
+          <span class="accent">Apply</span>.<br/>
+          Handle the pressure.
+        </h2>
+        <p class="sub">Application window: <b>Mar 01, 2026</b> → <b>Mar 31, 2026</b>. Limited slots.</p>
+      </div>
+
+      <div class="row">
+        <div class="panel">
+          <h3><span data-i18n="pt">Quem entra</span><span data-i18n="en">Who joins</span></h3>
+          <ul class="bullets">
+            <li><span data-i18n="pt">Júnior → início de pleno</span><span data-i18n="en">Junior → early mid-level</span><small><span data-i18n="pt">A ideia é evoluir durante a jornada.</span><span data-i18n="en">The point is growth during the journey.</span></small></li>
+            <li><span data-i18n="pt">Dev, QA, DevOps, Security</span><span data-i18n="en">Dev, QA, DevOps, Security</span><small><span data-i18n="pt">Mistura intencional. AppSec é interdisciplinar.</span><span data-i18n="en">Intentional mix. AppSec is interdisciplinary.</span></small></li>
+            <li><span data-i18n="pt">Sabe ler código + usar Git</span><span data-i18n="en">Can read code + use Git</span><small><span data-i18n="pt">O resto a gente treina no fogo.</span><span data-i18n="en">The rest gets trained in the fire.</span></small></li>
+          </ul>
+        </div>
+
+        <div class="panel">
+          <h3><span data-i18n="pt">Inscrição</span><span data-i18n="en">Application</span></h3>
+          <p><span data-i18n="pt">Envie mini-bio, background e (se tiver) GitHub/portfolio. A gente retorna com próximos passos.</span><span data-i18n="en">Submit a short bio, background, and (optional) GitHub/portfolio. We’ll follow up with next steps.</span></p>
+          <div class="btnrow" style="margin-top:16px;">
+            <a class="btn primary" href="https://example.com/inscricao" style="width:100%;">
+              <span data-i18n="pt">Inscrever agora</span>
+              <span data-i18n="en">Apply now</span>
+            </a>
+          </div>
+
+          <p class="micro">
+            <span data-i18n="pt">Quando encerrar, troque o texto para “Inscrições encerradas. Aguarde a próxima.” e mude o botão para lista de espera.</span>
+            <span data-i18n="en">When closed, change to “Applications closed. Stay tuned.” and switch the button to a waitlist.</span>
+          </p>
+
+          <!-- BLOCO FECHADO (copiar/colar quando precisar)
+          <h3 style="margin-top:18px;"><span data-i18n="pt">Inscrições encerradas</span><span data-i18n="en">Applications closed</span></h3>
+          <p><span data-i18n="pt">Aguarde a próxima temporada.</span><span data-i18n="en">Stay tuned for the next season.</span></p>
+          <a class="btn ghost" href="https://example.com/waitlist" style="width:100%;"><span data-i18n="pt">Quero ser avisado</span><span data-i18n="en">Notify me</span></a>
+          -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTAs: split-screen, just like YAS vibe -->
+  <section id="cta">
+    <div class="wrap">
+      <div data-i18n="pt">
+        <h2 class="mega" style="font-size:clamp(34px,4.6vw,78px);">
+          Dois caminhos.<br/>
+          Mesmo <span class="accent">fogo</span>.
+        </h2>
+        <p class="sub">Formato para empresa e formato para evento. Setup simples. Impacto alto.</p>
+      </div>
+
+      <div data-i18n="en">
+        <h2 class="mega" style="font-size:clamp(34px,4.6vw,78px);">
+          Two paths.<br/>
+          Same <span class="accent">fire</span>.
+        </h2>
+        <p class="sub">Company format and event format. Simple setup. High impact.</p>
+      </div>
+
+      <div class="split">
+        <div class="cta">
+          <h3>Company</h3>
+          <p>
+            <span data-i18n="pt">Treinamento competitivo para acelerar maturidade do time. Conteúdo prático, medível, com feedback ao vivo.</span>
+            <span data-i18n="en">Competitive training to accelerate team maturity. Practical, measurable, with live feedback.</span>
+          </p>
+          <a class="btn primary" href="mailto:you@example.com?subject=AppSec%20on%20Fire%20-%20Company">
+            <span data-i18n="pt">Quero rodar na minha empresa</span>
+            <span data-i18n="en">Run it at my company</span>
+          </a>
+          <div class="micro">
+            <span data-i18n="pt">Resposta em até 48h.</span>
+            <span data-i18n="en">Reply within 48h.</span>
+          </div>
+        </div>
+
+        <div class="cta alt">
+          <h3>Event</h3>
+          <p>
+            <span data-i18n="pt">Formato palco: participantes competem e a plateia aprende junto. Perfeito para conferências e meetups.</span>
+            <span data-i18n="en">Stage format: contestants compete while the audience learns live. Perfect for conferences and meetups.</span>
+          </p>
+          <a class="btn ghost" href="mailto:you@example.com?subject=AppSec%20on%20Fire%20-%20Event">
+            <span data-i18n="pt">Quero levar para meu evento</span>
+            <span data-i18n="en">Bring it to my event</span>
+          </a>
+          <div class="micro">
+            <span data-i18n="pt">Setup simples. Impacto alto.</span>
+            <span data-i18n="en">Simple setup. High impact.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between">
+        <div>© <span id="year"></span> AppSec on Fire</div>
+        <div style="opacity:.85">
+          <span data-i18n="pt">Sem slides. Sem desculpas. Só engenharia.</span>
+          <span data-i18n="en">No slides. No excuses. Just engineering.</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
