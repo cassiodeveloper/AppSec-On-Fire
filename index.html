@@ -379,18 +379,18 @@
         </div>
       </div>
     </section>
-    <section class="ladder-next" aria-label="Próximo passo">
+    <section class="ladder-next" aria-label="next">
   <div class="ladder-next__inner">
-    <p class="ladder-next__kicker">Próximo passo</p>
+    <p class="ladder-next__kicker" data-pt="Próximo passo" data-en="What comes next">Próximo passo</p>
     <div class="ladder-next__cards">
       <a class="ladder-next__card ladder-next__card--primary" href="https://cassiodeveloper.com.br/IronSoftware/" data-ladder-from="capacitacao" data-ladder-to="capacitacao">
-        <span class="ladder-next__title">AppSec: Software de Ferro</span>
-        <span class="ladder-next__reason">Do reality à prática dura de 8h com o time inteiro.</span>
-        <span class="ladder-next__go">Ver o treinamento &rarr;</span>
+        <span class="ladder-next__title" data-pt="AppSec: Software de Ferro" data-en="AppSec: Software of Iron">AppSec: Software de Ferro</span>
+        <span class="ladder-next__reason" data-pt="Do reality à prática dura de 8h com o time inteiro." data-en="From the reality show to the hard 8h practice with the whole team.">Do reality à prática dura de 8h com o time inteiro.</span>
+        <span class="ladder-next__go" data-pt="Ver o treinamento →" data-en="See the training →">Ver o treinamento →</span>
       </a>
       <a class="ladder-next__card" href="https://mariaappsec.com" data-ladder-from="capacitacao" data-ladder-to="recorrencia">
-        <span class="ladder-next__title">M.A.R.I.A.</span>
-        <span class="ladder-next__reason">Coloque risco priorizado no CI do time que você acabou de formar.</span>
+        <span class="ladder-next__title" data-pt="M.A.R.I.A." data-en="M.A.R.I.A.">M.A.R.I.A.</span>
+        <span class="ladder-next__reason" data-pt="Coloque risco priorizado no CI do time que você acabou de formar." data-en="Put prioritized risk in the CI of the team you just built.">Coloque risco priorizado no CI do time que você acabou de formar.</span>
       </a>
     </div>
   </div>
@@ -413,11 +413,15 @@
 </style>
 
 <script>
-  document.addEventListener('click',function(e){
-    var a=e.target.closest&&e.target.closest('.ladder-next__card');
-    if(!a||!window.gtag)return;
-    gtag('event','ladder_click',{from_step:a.getAttribute('data-ladder-from'),to_step:a.getAttribute('data-ladder-to'),link_url:a.href,source_page:location.pathname});
-  });
+(function(){
+  var root=document.documentElement;
+  function apply(){var pt=(root.getAttribute('lang')||'').toLowerCase().indexOf('pt')===0;
+    document.querySelectorAll('.ladder-next [data-pt][data-en]').forEach(function(el){el.textContent=pt?el.getAttribute('data-pt'):el.getAttribute('data-en');});}
+  apply();
+  try{new MutationObserver(apply).observe(root,{attributes:true,attributeFilter:['lang']});}catch(e){}
+  document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('.ladder-next__card');if(!a||!window.gtag)return;
+    gtag('event','ladder_click',{from_step:a.getAttribute('data-ladder-from'),to_step:a.getAttribute('data-ladder-to'),link_url:a.href,source_page:location.pathname});});
+})();
 </script>
 
 <footer>
