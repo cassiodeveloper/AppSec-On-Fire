@@ -18,7 +18,9 @@
     <meta property="og:description" content="12 participantes. 2 provas. 1 eliminado. AppSec real sob pressão." />
     <meta property="og:url" content="https://cassiodeveloper.com.br/AppSec-On-Fire/" />
     <meta property="og:image" content="https://cassiodeveloper.com.br/AppSec-On-Fire/img/og-appsec-on-fire.png" />
-    <meta property="og:image:alt" content="AppSec on Fire — Secure Under Pressure" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="AppSec on Fire. Secure Under Pressure." />
     <meta property="og:locale" content="pt_BR" />
     <meta property="og:locale:alternate" content="en_US" />
 
@@ -26,6 +28,7 @@
     <meta name="twitter:title" content="AppSec on Fire" />
     <meta name="twitter:description" content="Secure Under Pressure. Reality de AppSec com provas práticas e eliminação semanal." />
     <meta name="twitter:image" content="https://cassiodeveloper.com.br/AppSec-On-Fire/img/og-appsec-on-fire.png" />
+    <meta name="twitter:image:alt" content="AppSec on Fire. Secure Under Pressure." />
 
     <link rel="stylesheet" href="css/style.css" />
 
@@ -33,11 +36,28 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "AppSec on Fire",
-      "url": "https://cassiodeveloper.com.br/AppSec-On-Fire/",
-      "description": "Reality-style AppSec competition to grow junior talent. 12 contestants, 2 challenges per episode, weekly elimination.",
-      "inLanguage": ["pt-BR","en"]
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://cassiodeveloper.com.br/AppSec-On-Fire/#website",
+          "name": "AppSec on Fire",
+          "url": "https://cassiodeveloper.com.br/AppSec-On-Fire/",
+          "description": "Reality-style AppSec competition to grow junior talent. 12 contestants, 2 challenges per episode, weekly elimination.",
+          "inLanguage": ["pt-BR","en"],
+          "publisher": { "@id": "https://cassiodeveloper.com.br/#cassio" }
+        },
+        {
+          "@type": "Person",
+          "@id": "https://cassiodeveloper.com.br/#cassio",
+          "name": "Cássio Batista Pereira",
+          "url": "https://cassiodeveloper.com.br/",
+          "jobTitle": "Application Security Specialist",
+          "sameAs": [
+            "https://www.linkedin.com/in/cassiodeveloper/",
+            "https://x.com/cassiodeveloper"
+          ]
+        }
+      ]
     }
     </script>
   </head>
@@ -314,7 +334,7 @@
               <span data-i18n="pt">Treinamento competitivo para acelerar maturidade do time. Conteúdo prático, medível, com feedback ao vivo.</span>
               <span data-i18n="en">Competitive training to accelerate team maturity. Practical, measurable, with live feedback.</span>
             </p>
-            <a class="btn primary" href="mailto:you@example.com?subject=AppSec%20on%20Fire%20-%20Company">
+            <a class="btn primary" href="https://calendar.app.google/BJYeQfjmCdEQNSfe6" target="_blank" rel="noopener">
               <span data-i18n="pt">Quero rodar na minha empresa</span>
               <span data-i18n="en">Run it at my company</span>
             </a>
@@ -330,7 +350,7 @@
               <span data-i18n="pt">Formato palco: participantes competem e a plateia aprende junto. Perfeito para conferências e meetups.</span>
               <span data-i18n="en">Stage format: contestants compete while the audience learns live. Perfect for conferences and meetups.</span>
             </p>
-            <a class="btn ghost" href="mailto:you@example.com?subject=AppSec%20on%20Fire%20-%20Event">
+            <a class="btn ghost" href="https://calendar.app.google/BJYeQfjmCdEQNSfe6" target="_blank" rel="noopener">
               <span data-i18n="pt">Quero levar para meu evento</span>
               <span data-i18n="en">Bring it to my event</span>
             </a>
